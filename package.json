@@ -38,7 +38,7 @@
   },
   "scripts": {
     "lint": "eslint ."
-  }
+  },
   "bundleDependencies": [],
 
   "private": true,
