@@ -1,8 +1,31 @@
 {
   "name": "keystonejs",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "KeystoneJS Sample Application",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url": "http://www.openshift.com/"
+  },
+  "homepage": "http://www.openshift.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
   "dependencies": {
+    "express": "~3.4.4"
     "keystone": "^0.3.19",
     "async": "^1.5.0",
     "lodash": "^4.13.1",
@@ -15,6 +38,9 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node keystone.js"
   }
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "keystone.js"
 }
