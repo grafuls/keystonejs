@@ -25,7 +25,7 @@
   },
 
   "dependencies": {
-    "express": "~3.4.4"
+    "express": "~3.4.4",
     "keystone": "^0.3.19",
     "async": "^1.5.0",
     "lodash": "^4.13.1",
@@ -37,7 +37,7 @@
     "eslint-plugin-react": "^5.1.1"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint ."
   }
   "bundleDependencies": [],
 
