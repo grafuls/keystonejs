@@ -1,7 +1,7 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "keystonejs",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "KeystoneJS Sample Application",
   "keywords": [
     "OpenShift",
     "Node.js",
@@ -25,11 +25,22 @@
   },
 
   "dependencies": {
-    "express": "~3.4.4"
+    "express": "~3.4.4",
+    "keystone": "^0.3.19",
+    "async": "^1.5.0",
+    "lodash": "^4.13.1",
+    "dotenv": "^2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^2.12.0",
+    "eslint-config-keystone": "^2.3.1",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
   "bundleDependencies": [],
 
   "private": true,
-  "main": "server.js"
+  "main": "keystone.js"
 }
