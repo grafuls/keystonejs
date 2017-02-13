@@ -9,6 +9,11 @@ var keystone = require('keystone');
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
 
+var connectionString = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +  process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" + process.env.OPENSHIFT_MONGODB_DB_HOST + '/' + process.env.OPENSHIFT_APP_NAME;
+
+var host = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT  || process.env.OPENSHIFT_INTERNAL_PORT || 3000;
+
 keystone.init({
 	'name': 'keystonejs',
 	'brand': 'keystonejs',
@@ -25,6 +30,11 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
+
+	'mongo': connectionString,
+
+	'host': host,
+	'port': port
 });
 
 // Load your project's Models
