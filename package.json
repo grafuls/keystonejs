@@ -13,11 +13,6 @@
     "email": "ramr@example.org",
     "url": "http://www.openshift.com/"
   },
-  "homepage": "http://www.openshift.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
 
   "engines": {
     "node": ">= 0.6.0",
